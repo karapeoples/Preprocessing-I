@@ -1,0 +1,209 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+
+
+// Variables
+@background: #35caf0;
+@main: #fff;
+
+
+//Mix-Ins
+
+*{max-width:100%;
+
+header {
+	display: flex;
+	margin: 1%;
+	font-size: 25px;
+	height:25px;
+
+	nav {
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	justify-content: space-evenly;
+	flex-grow: 1;
+	width:100%;
+	
+		a {
+			background:@background;
+			color: @main;
+			&:hover{
+				background:@main;
+				color:@background;
+			}
+		}
+	}
+}
+
+.programs{
+	display:flex;
+	
+
+	.img1{
+		flex-direction:column;
+        width:500px;
+		height: 500px;
+		margin:5px;
+	}
+}
+
+.list1{
+	width:50%;
+	margin: 5%;
+	
+    h1{
+		font-size:35px;
+		text-decoration:underline;
+		font-style:bold;
+		margin: 5px;
+	}
+	
+
+.mo{
+		h2{
+				font-size: 25px;
+				font-style:italic;
+				text-decoration:underline;
+		}
+
+		li{
+			list-style-type:circle;
+
+		}
+	}	
+
+.acs{
+	h2{
+		font-size: 25px;
+		font-style:italic;
+		text-decoration:underline;
+	}
+
+	li{
+	list-style-type:circle;
+	}
+}
+	}
+}
+
+
+
+
+.languages{
+	display:flex;
+	
+
+	.img2{
+		flex-direction:column;
+        width: 500px;
+		height: 500px;
+		margin: 5px;
+	}
+}
+
+.list2{
+	width:50%;
+	margin:5%;
+	
+.cl{
+    h1{
+		font-size:35px;
+		text-decoration:underline;
+		font-style:bold;
+		margin:5px;
+	}
+	
+		li{
+			list-style-type:circle;
+		}
+	}	
+}
+
+
+
+.other{
+	display:flex;
+	
+
+	.img3{
+		flex-direction:column;
+        width: 500px;
+		height:500px;
+		margin:5px;
+	}
+}
+
+.list3{
+	width:50%;
+	margin:5%;
+	
+.lo{
+    h1{
+		font-size:35px;
+		text-decoration:underline;
+		font-style:bold;
+		margin: 5px;
+	}
+	
+		li{
+			list-style-type:circle;
+		}
+	}
+}

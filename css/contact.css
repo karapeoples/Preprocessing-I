@@ -126,21 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   height: 100%;
 }
-header {
+* {
+  max-width: 100%;
+}
+* header {
   display: flex;
   margin: 1%;
   font-size: 25px;
   height: 25px;
 }
-header nav {
+* header nav {
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -148,88 +147,75 @@ header nav {
   flex-grow: 1;
   width: 100%;
 }
-header nav a {
+* header nav a {
   background: #35caf0;
   color: #fff;
 }
-header nav a:hover {
+* header nav a:hover {
   background: #fff;
   color: #35caf0;
-  border-radius: 25px;
 }
-.image img {
+* .image img {
   display: flex;
-  height: 250px;
-  width: 98%;
-  margin: 1%;
+  height: 200px;
+  width: 74%;
+  margin-left: 13%;
+  margin-bottom: 5 px;
 }
-.top {
-  margin: 2%;
-}
-.top h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 45px;
-  text-align: center;
-}
-h2 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
+* h1 {
   font-size: 35px;
-  margin-top: 5%;
+  font-style: bold;
+  text-align: center;
+  margin: 5px;
 }
-p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 25px;
-  margin: 5%;
+* h1:hover {
+  font-size: 50px;
+  color: black;
 }
-.about {
-  margin: 10%;
+* .address {
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  margin: 5px;
 }
-.about h2 {
-  display: flex;
-  text-decoration: none;
+* .address:hover {
   font-size: 35px;
-  justify-content: center;
+  color: black;
+}
+* .email {
+  font-size: 20px;
   text-align: center;
 }
-.about p {
-  display: flex;
-  text-decoration: none;
-  font-size: 25px;
-  justify-content: center;
+* .email a:hover {
+  font-size: 35px;
+  color: black;
+}
+* .numbers {
+  font-size: 20px;
   text-align: center;
 }
-.skills {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
+* .numbers .phone {
+  height: 35px;
+  border-radius: 5px;
+  background: khaki;
+  color: forestgreen;
 }
-.skills button {
-  border: 1px solid black;
-  padding: 2px;
-  margin: 2px;
-  border-radius: 25px;
-  width: 33%;
-  background-color: #35caf0;
+* .numbers .phone:hover {
+  margin: 5px;
+  font-size: 35px;
+  background: forestgreen;
+  color: khaki;
 }
-.skills button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+* .numbers .cell {
+  height: 35px;
+  border-radius: 5px;
+  background: khaki;
+  color: forestgreen;
 }
-.skills button a:hover {
-  background: #fff;
-  color: #35caf0;
-  border-radius: 25px;
+* .numbers .cell:hover {
+  margin: 5px;
+  font-size: 35px;
+  background: forestgreen;
+  color: khaki;
 }

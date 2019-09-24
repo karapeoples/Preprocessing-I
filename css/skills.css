@@ -119,28 +119,27 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   height: 100%;
 }
-header {
+* {
+  max-width: 100%;
+}
+* header {
   display: flex;
   margin: 1%;
   font-size: 25px;
   height: 25px;
 }
-header nav {
+* header nav {
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -148,88 +147,90 @@ header nav {
   flex-grow: 1;
   width: 100%;
 }
-header nav a {
+* header nav a {
   background: #35caf0;
   color: #fff;
 }
-header nav a:hover {
+* header nav a:hover {
   background: #fff;
   color: #35caf0;
-  border-radius: 25px;
 }
-.image img {
+* .programs {
   display: flex;
-  height: 250px;
-  width: 98%;
-  margin: 1%;
 }
-.top {
-  margin: 2%;
+* .programs .img1 {
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
 }
-.top h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 45px;
-  text-align: center;
-}
-h2 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 35px;
-  margin-top: 5%;
-}
-p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 25px;
+* .list1 {
+  width: 50%;
   margin: 5%;
 }
-.about {
-  margin: 10%;
-}
-.about h2 {
-  display: flex;
-  text-decoration: none;
+* .list1 h1 {
   font-size: 35px;
-  justify-content: center;
-  text-align: center;
+  text-decoration: underline;
+  font-style: bold;
+  margin: 5px;
 }
-.about p {
-  display: flex;
-  text-decoration: none;
+* .list1 .mo h2 {
   font-size: 25px;
-  justify-content: center;
-  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
 }
-.skills {
+* .list1 .mo li {
+  list-style-type: circle;
+}
+* .list1 .acs h2 {
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline;
+}
+* .list1 .acs li {
+  list-style-type: circle;
+}
+.languages {
   display: flex;
-  justify-content: center;
+}
+.languages .img2 {
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+}
+.list2 {
+  width: 50%;
   margin: 5%;
 }
-.skills button {
-  border: 1px solid black;
-  padding: 2px;
-  margin: 2px;
-  border-radius: 25px;
-  width: 33%;
-  background-color: #35caf0;
+.list2 .cl h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  font-style: bold;
+  margin: 5px;
 }
-.skills button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+.list2 .cl li {
+  list-style-type: circle;
 }
-.skills button a:hover {
-  background: #fff;
-  color: #35caf0;
-  border-radius: 25px;
+.other {
+  display: flex;
+}
+.other .img3 {
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+}
+.list3 {
+  width: 50%;
+  margin: 5%;
+}
+.list3 .lo h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  font-style: bold;
+  margin: 5px;
+}
+.list3 .lo li {
+  list-style-type: circle;
 }

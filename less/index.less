@@ -4,56 +4,267 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+
+
+  * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
+//My Code Starts Here.....
+
+
+// ?Variables
+@background: #35caf0;
+@main: #fff;
+
+
+// ?Mix-Ins
+.hover(@background, @main) {
+&:hover {
+    background: @background;
+	color: @main;
+	border-radius:25px;
+}
+}
+
+.display(@justify,@align) {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+header {
+	display: flex;
+	margin: 1%;
+	font-size: 25px;
+	height:25px;
+	nav {
+		display: flex;
+        text-decoration: none;
+        justify-content: center;
+        justify-content: space-evenly;
+		flex-grow: 1;
+		width:100%;
+
+		a {
+			background:@background;
+			color: @main;
+			.hover(@main, @background);
+		}
+	}
+	}
+
+
+.image {
+    img {
+		display: flex;
+		height: 250px;
+		width: 98%;
+		margin: 1%;
+    }
+}
+
+
+.top {
+	margin: 2%;
+	
+	h1 {
+		display:flex;
+		justify-content:center;
+		align-content:center;
+		text-decoration: none;
+		font-size: 45px;
+		text-align:center;
+	}
+}
+
+	h2 {
+		.display(center,center);
+		text-decoration: none;
+		font-size: 35px;
+		margin-top: 5%;
+	}
+
+	p {
+	.display(center,center);
+	text-decoration: none;
+	font-size: 25px;
+	margin: 5%;
+	}
+
+.about {
+    margin: 10%;
+
+    h2 {
+		display: flex;
+		text-decoration: none;
+		font-size: 35px;
+		justify-content: center;
+		text-align: center;
+    }
+
+    p {
+		display: flex;
+		text-decoration: none;
+		font-size: 25px;
+		justify-content: center;
+		text-align:center
+		}
+    }
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+
+    button {
+		border: 1px solid black;
+		padding: 2px;
+		margin: 2px;
+		border-radius: 25px;
+		width:33%;
+		background-color: @background;
+		
+    a {
+			display: block;
+    		width: 100%;
+    		height: 100%;
+			text-decoration: none;
+			font-size: 25px;
+			color: @main;
+			.hover(@main, @background);
+		}
+	}
+}
