@@ -130,16 +130,22 @@ html,
 body {
   height: 100%;
 }
-* {
-  max-width: 100%;
+.border {
+  text-align: center;
+  max-width: 75%;
+  border: 5px double #35caf0;
+  margin-left: 12%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background: black;
 }
-* header {
+header {
   display: flex;
   margin: 1%;
   font-size: 25px;
   height: 25px;
 }
-* header nav {
+header nav {
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -147,90 +153,94 @@ body {
   flex-grow: 1;
   width: 100%;
 }
-* header nav a {
+header nav a {
   background: #35caf0;
   color: #fff;
 }
-* header nav a:hover {
+header nav a:hover {
   background: #fff;
   color: #35caf0;
 }
-* .programs {
+.img {
   display: flex;
-}
-* .programs .img1 {
   flex-direction: column;
-  width: 500px;
-  height: 500px;
-  margin: 5px;
+  width: 250px;
+  height: 250px;
+  margin: 1%;
 }
-* .list1 {
+.programs {
+  display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: #35caf0;
+  color: #fff;
+}
+.programs .list1 {
   width: 50%;
-  margin: 5%;
+  margin: 1%;
+  margin-left: 14%;
 }
-* .list1 h1 {
+.programs .list1 h1 {
   font-size: 35px;
   text-decoration: underline;
   font-style: bold;
-  margin: 5px;
+  margin: 1%;
 }
-* .list1 .mo h2 {
+.programs .mo h2 {
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
 }
-* .list1 .mo li {
+.programs .mo li {
   list-style-type: circle;
 }
-* .list1 .acs h2 {
+.acs h2 {
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
 }
-* .list1 .acs li {
+.acs li {
   list-style-type: circle;
 }
 .languages {
   display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: #35caf0;
+  color: #fff;
 }
-.languages .img2 {
-  flex-direction: column;
-  width: 500px;
-  height: 500px;
-  margin: 5px;
-}
-.list2 {
+.languages .list2 {
   width: 50%;
-  margin: 5%;
+  margin: 1%;
+  margin-left: 14%;
 }
-.list2 .cl h1 {
+.languages .list2 .cl h1 {
   font-size: 35px;
   text-decoration: underline;
   font-style: bold;
-  margin: 5px;
+  margin: 1%;
 }
-.list2 .cl li {
+.languages .list2 .cl li {
   list-style-type: circle;
 }
 .other {
   display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: #35caf0;
+  color: #fff;
 }
-.other .img3 {
-  flex-direction: column;
-  width: 500px;
-  height: 500px;
-  margin: 5px;
-}
-.list3 {
+.other .list3 {
   width: 50%;
-  margin: 5%;
+  margin: 1%;
+  margin-left: 14%;
 }
-.list3 .lo h1 {
+.other .list3 .lo h1 {
   font-size: 35px;
   text-decoration: underline;
   font-style: bold;
-  margin: 5px;
+  margin: 1%;
 }
-.list3 .lo li {
+.other .list3 .lo li {
   list-style-type: circle;
 }

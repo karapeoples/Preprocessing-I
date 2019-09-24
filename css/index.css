@@ -134,6 +134,14 @@ html,
 body {
   height: 100%;
 }
+.border {
+  text-align: center;
+  max-width: 75%;
+  border: 5px double black;
+  margin-left: 12%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 header {
   display: flex;
   margin: 1%;
@@ -160,8 +168,8 @@ header nav a:hover {
 .image img {
   display: flex;
   height: 250px;
-  width: 98%;
-  margin: 1%;
+  width: 50%;
+  margin-left: 25%;
 }
 .top {
   margin: 2%;
@@ -207,12 +215,12 @@ p {
   justify-content: center;
   text-align: center;
 }
-.skills {
+#skills {
   display: flex;
   justify-content: center;
   margin: 5%;
 }
-.skills button {
+#skills button {
   border: 1px solid black;
   padding: 2px;
   margin: 2px;
@@ -220,7 +228,7 @@ p {
   width: 33%;
   background-color: #35caf0;
 }
-.skills button a {
+#skills button a {
   display: block;
   width: 100%;
   height: 100%;
@@ -228,7 +236,7 @@ p {
   font-size: 25px;
   color: #fff;
 }
-.skills button a:hover {
+#skills button a:hover {
   background: #fff;
   color: #35caf0;
   border-radius: 25px;
