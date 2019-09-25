@@ -131,151 +131,167 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-
-  * {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
-//My Code Starts Here.....
-
+//*My Code Starts Here.....
 
 // ?Variables
-@background: #35caf0;
+@background: red;
 @main: #fff;
-
-
+@titleFont: "Amatic SC", cursive;
+@cuteFont: "Indie Flower", cursive;
 // ?Mix-Ins
 .hover(@background, @main) {
-&:hover {
+  &:hover {
     background: @background;
-	color: @main;
-	border-radius:25px;
-}
+    color: @main;
+    border-radius: 25px;
+  }
 }
 
 .display(@justify,@align) {
-    display: flex;
-    justify-content: @justify;
-    align-content: @align;
+  display: flex;
+  justify-content: @justify;
+  align-content: @align;
 }
 
-.border{
-	text-align:center;
-	max-width:75%;
-	border: 5px double black;
-	margin-left:12%;
-	margin-top:1%;
-	margin-bottom:1%;
-}
 
-header {
+//*Coding......
+
+.border {
+	text-align: center;
+	max-width: 98%;
+	border: 5px double @background;
+	margin: 1%;
+	background: black;
+	color: @main;
+}
+  
+  header {
 	display: flex;
 	margin: 1%;
 	font-size: 25px;
-	height:25px;
+	height: 25px;
 	nav {
-		display: flex;
-        text-decoration: none;
-        justify-content: center;
-        justify-content: space-evenly;
-		flex-grow: 1;
-		width:100%;
-		
-
-		a {
-			background:@background;
-			color: @main;
-			.hover(@main, @background);
-		}
+	  display: flex;
+	  text-decoration: none;
+	  justify-content: center;
+	  justify-content: space-evenly;
+	  width: 100%;
 	}
+	button {
+	  border: 1px solid @main;
+	  text-align: center;
+	  height: 50px;
+	  border-radius: 25px;
+	  width: 20%;
+	  background-color: @background;
+  
+	  a {
+		display:block;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		font-family: @titleFont;
+		font-size: 35px;
+		color: @main;
+		.hover(@main, @background);
+	  }
 	}
-
+  }
 
 .image {
-    img {
-		display: flex;
-		height: 250px;
-		width: 50%;
-		margin-left:25%;
-
-    }
+  img {
+    display: flex;
+    height: 250px;
+    width: 50%;
+	margin-left: 25%;
+	margin-top:5%;
+  }
 }
-
 
 .top {
-	margin: 2%;
-	
-	h1 {
-		display:flex;
-		justify-content:center;
-		align-content:center;
-		text-decoration: none;
-		font-size: 45px;
-		text-align:center;
-	}
-}
+  margin: 2%;
 
-	h2 {
-		.display(center,center);
-		text-decoration: none;
-		font-size: 35px;
-		margin-top: 5%;
-	}
-
-	p {
-	.display(center,center);
-	text-decoration: none;
-	font-size: 25px;
-	margin: 5%;
-	}
-
-.about {
-    margin: 10%;
-
-    h2 {
-		display: flex;
-		text-decoration: none;
-		font-size: 35px;
-		justify-content: center;
-		text-align: center;
-    }
-
-    p {
-		display: flex;
-		text-decoration: none;
-		font-size: 25px;
-		justify-content: center;
-		text-align:center
-		}
-    }
-
-
-#skills {
+  h1 {
     display: flex;
     justify-content: center;
-    margin: 5%;
+    align-content: center;
+    text-decoration: none;
+    font-size: 45px;
+	text-align: center;
+	font-family:@titleFont;
+  }
+}
 
-    button {
-		border: 1px solid black;
-		padding: 2px;
-		margin: 2px;
-		border-radius: 25px;
-		width:33%;
-		background-color: @background;
-		
+h2 {
+  .display(center, center);
+  text-decoration: none;
+  font-size: 35px;
+  margin-top: 5%;
+  font-family:@titleFont;
+}
+
+p {
+  .display(center, center);
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5%;
+  font-family:@cuteFont;
+}
+
+.about {
+  margin: 10%;
+
+  h2 {
+    display: flex;
+    text-decoration: none;
+    font-size: 35px;
+    justify-content: center;
+	text-align: center;
+	font-family:@titleFont;
+  }
+
+  p {
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: center;
+	text-align: center;
+	font-family:@cuteFont;
+  }
+}
+
+#skills {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+
+  button {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 25px;
+    width: 33%;
+	background-color: @background;
+	
+
     a {
-			display: block;
-    		width: 100%;
-    		height: 100%;
-			text-decoration: none;
-			font-size: 25px;
-			color: @main;
-			.hover(@main, @background);
-		}
-	}
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+	  font-size: 35px;
+	  font-family:@titleFont;
+      color: @main;
+      .hover(@main, @background);
+    }
+  }
 }

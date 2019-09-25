@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -132,12 +132,11 @@ body {
 }
 .border {
   text-align: center;
-  max-width: 75%;
-  border: 5px double #35caf0;
-  margin-left: 12%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  max-width: 98%;
+  border: 5px double red;
+  margin: 1%;
   background: black;
+  color: #fff;
 }
 header {
   display: flex;
@@ -150,16 +149,29 @@ header nav {
   text-decoration: none;
   justify-content: center;
   justify-content: space-evenly;
-  flex-grow: 1;
   width: 100%;
 }
-header nav a {
-  background: #35caf0;
+header button {
+  border: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+  border-radius: 25px;
+  width: 20%;
+  background-color: red;
+}
+header button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
   color: #fff;
 }
-header nav a:hover {
+header button a:hover {
   background: #fff;
-  color: #35caf0;
+  color: red;
+  border-radius: 25px;
 }
 .img {
   display: flex;
@@ -172,32 +184,40 @@ header nav a:hover {
   display: flex;
   border: 5px groove black;
   margin: 1%;
-  background: #35caf0;
+  background: red;
   color: #fff;
+  margin-top: 5%;
 }
 .programs .list1 {
   width: 50%;
   margin: 1%;
   margin-left: 14%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
 }
 .programs .list1 h1 {
-  font-size: 35px;
+  font-size: 50px;
   text-decoration: underline;
   font-style: bold;
   margin: 1%;
+  font-family: "Amatic SC", cursive;
 }
-.programs .mo h2 {
+.programs .list1 .mo h2 {
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
+  font-family: "Indie Flower", cursive;
+  margin: 1%;
 }
-.programs .mo li {
+.programs .list1 .mo li {
   list-style-type: circle;
 }
 .acs h2 {
-  font-size: 25px;
   font-style: italic;
   text-decoration: underline;
+  font-family: "Indie Flower", cursive;
+  margin: 1%;
+  font-size: 25px;
 }
 .acs li {
   list-style-type: circle;
@@ -206,19 +226,22 @@ header nav a:hover {
   display: flex;
   border: 5px groove black;
   margin: 1%;
-  background: #35caf0;
+  background: red;
   color: #fff;
 }
 .languages .list2 {
   width: 50%;
   margin: 1%;
   margin-left: 14%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
 }
 .languages .list2 .cl h1 {
-  font-size: 35px;
+  font-size: 50px;
   text-decoration: underline;
   font-style: bold;
   margin: 1%;
+  font-family: "Amatic SC", cursive;
 }
 .languages .list2 .cl li {
   list-style-type: circle;
@@ -227,18 +250,21 @@ header nav a:hover {
   display: flex;
   border: 5px groove black;
   margin: 1%;
-  background: #35caf0;
+  background: red;
   color: #fff;
 }
 .other .list3 {
   width: 50%;
   margin: 1%;
   margin-left: 14%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
 }
 .other .list3 .lo h1 {
-  font-size: 35px;
+  font-size: 50px;
   text-decoration: underline;
   font-style: bold;
+  font-family: "Amatic SC", cursive;
   margin: 1%;
 }
 .other .list3 .lo li {

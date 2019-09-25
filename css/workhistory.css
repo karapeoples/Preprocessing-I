@@ -133,11 +133,13 @@ body {
 }
 .border {
   text-align: center;
-  max-width: 75%;
-  border: 5px double black;
-  margin-left: 12%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  max-width: 98%;
+  border: 5px double red;
+  margin: 1%;
+  background: black;
+  color: #fff;
+  height: 75%;
+  padding: 5%;
 }
 header {
   display: flex;
@@ -150,18 +152,34 @@ header nav {
   text-decoration: none;
   justify-content: center;
   justify-content: space-evenly;
-  flex-grow: 1;
   width: 100%;
 }
-header nav a {
-  background: #35caf0;
+header button {
+  border: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+  border-radius: 25px;
+  width: 20%;
+  background-color: red;
+}
+header button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
   color: #fff;
 }
-header nav a:hover {
+header button a:hover {
+  width: 100%;
+  height: 100%;
   background: #fff;
-  color: #35caf0;
+  color: red;
+  border-radius: 25px;
 }
 .image img {
+  margin-top: 5%;
   display: flex;
   height: 250px;
   width: 50%;
@@ -175,11 +193,14 @@ header nav a:hover {
   text-decoration: underline;
   font-style: bold;
   text-align: center;
+  font-family: "Amatic SC", cursive;
+  margin: 1%;
 }
 .current li {
   font-size: 20px;
   text-align: center;
   list-style-type: circle;
+  font-family: 'Courgette', cursive;
 }
 .previous {
   margin: 5%;
@@ -189,9 +210,12 @@ header nav a:hover {
   text-decoration: underline;
   font-style: bold;
   text-align: center;
+  font-family: "Amatic SC", cursive;
+  margin: 1%;
 }
 .previous li {
   font-size: 20px;
   text-align: center;
   list-style-type: circle;
+  font-family: 'Courgette', cursive;
 }

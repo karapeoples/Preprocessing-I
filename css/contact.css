@@ -132,11 +132,13 @@ body {
 }
 .border {
   text-align: center;
-  max-width: 75%;
-  border: 5px double black;
-  margin-left: 12%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  max-width: 98%;
+  border: 5px double red;
+  margin: 1%;
+  background: black;
+  color: #fff;
+  height: 75%;
+  padding: 5%;
 }
 header {
   display: flex;
@@ -149,77 +151,99 @@ header nav {
   text-decoration: none;
   justify-content: center;
   justify-content: space-evenly;
-  flex-grow: 1;
   width: 100%;
 }
-header nav a {
-  background: #35caf0;
+header button {
+  border: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+  border-radius: 25px;
+  width: 20%;
+  background-color: red;
+}
+header button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
   color: #fff;
 }
-header nav a:hover {
+header button a:hover {
+  width: 100%;
+  height: 100%;
   background: #fff;
-  color: #35caf0;
+  color: red;
+  border-radius: 25px;
 }
 .image img {
   display: flex;
   height: 200px;
   width: 50%;
   margin-left: 25%;
+  margin-top: 5%;
 }
 h1 {
-  font-size: 35px;
+  font-size: 50px;
   font-style: bold;
   text-align: center;
   margin: 5px;
+  font-family: "Amatic SC", cursive;
 }
 h1:hover {
-  font-size: 50px;
-  color: black;
+  font-size: 75px;
+  color: red;
 }
 .address {
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   text-decoration: underline;
   text-align: center;
   margin: 5px;
+  font-family: "Indie Flower", cursive;
 }
 .address:hover {
-  font-size: 35px;
-  color: black;
+  font-size: 50px;
+  color: red;
 }
 .email {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
+  font-family: "Indie Flower", cursive;
 }
 .email a:hover {
-  font-size: 35px;
-  color: black;
+  font-size: 50px;
+  color: red;
 }
 .numbers {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
+  font-family: "Indie Flower", cursive;
 }
 .numbers .phone {
-  height: 35px;
+  font-size: 30px;
   border-radius: 5px;
-  background: khaki;
-  color: forestgreen;
+  background: red;
+  color: #fff;
 }
 .numbers .phone:hover {
-  margin: 5px;
+  width: 50%;
   font-size: 35px;
-  background: forestgreen;
-  color: khaki;
+  margin: 5px;
+  background: #fff;
+  color: red;
 }
 .numbers .cell {
-  height: 35px;
+  font-size: 30px;
   border-radius: 5px;
-  background: khaki;
-  color: forestgreen;
+  background: red;
+  color: #fff;
 }
 .numbers .cell:hover {
+  width: 50%;
   margin: 5px;
   font-size: 35px;
-  background: forestgreen;
-  color: khaki;
+  background: #fff;
+  color: red;
 }

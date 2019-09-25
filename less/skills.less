@@ -4,213 +4,311 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
-
-
-
-
-// Variables
-@background: #35caf0;
+// ?Variables
+@background: red;
 @main: #fff;
+@titleFont: "Amatic SC", cursive;
+@cuteFont: "Indie Flower", cursive;
+@listFont: "Courgette", cursive;
 
+// ?Mix-Ins
+.hover(@background, @main) {
+  &:hover {
+    background: @background;
+    color: @main;
+    border-radius: 25px;
+  }
+}
 
-//Mix-Ins
-
-
-
-
-.border{
-	text-align:center;
-	max-width:75%;
-	border: 5px double @background;
-	margin-left:12%;
-	margin-top:1%;
-	margin-bottom:1%;
-	background:black;
+.border {
+  text-align: center;
+  max-width: 98%;
+  border: 5px double @background;
+  margin: 1%;
+  background: black;
+  color: @main;
 }
 
 header {
-	display: flex;
-	margin: 1%;
-	font-size: 25px;
-	height:25px;
+  display: flex;
+  margin: 1%;
+  font-size: 25px;
+  height: 25px;
+  nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  button {
+    border: 1px solid @main;
+    text-align: center;
+    height: 50px;
+    border-radius: 25px;
+    width: 20%;
+    background-color: @background;
 
-	nav {
-	display: flex;
-	text-decoration: none;
-	justify-content: center;
-	justify-content: space-evenly;
-	flex-grow: 1;
-	width:100%;
-	
-		a {
-			background:@background;
-			color: @main;
-			&:hover{
-				background:@main;
-				color:@background;
-			}
-		}
-	}
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: @titleFont;
+      font-size: 35px;
+      color: @main;
+      .hover(@main, @background);
+    }
+  }
 }
-.img{
-		display:flex;
-		flex-direction:column;
-		width: 250px;
-		height:250px;
-		margin:1%;
-	}
-.programs{
-	display:flex;
-	border: 5px groove black;
+.img {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  margin: 1%;
+}
+.programs {
+  display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
+  margin-top: 5%;
+
+  .list1 {
+    width: 50%;
+    margin: 1%;
+    margin-left: 14%;
+	font-family: @listFont;
+	font-size:15px;
+
+    h1 {
+      font-size: 50px;
+      text-decoration: underline;
+      font-style: bold;
+      margin: 1%;
+      font-family: @titleFont;
+    }
+  
+
+  .mo {
+    h2 {
+      font-size: 25px;
+      font-style: italic;
+      text-decoration: underline;
+	  font-family: @cuteFont;
+	  margin:1%;
+    }
+
+    li {
+	  list-style-type: circle;
+	  
+    }
+  }
+}
+}
+.acs {
+  h2 {
+    font-style: italic;
+    text-decoration: underline;
+	font-family: @cuteFont;
 	margin:1%;
-	background: @background;
-	color:@main;
-	
-.list1{
-	width:50%;
-	margin: 1%;
-	margin-left:14%;
-	
-	
-    h1{
-		font-size:35px;
-		text-decoration:underline;
-		font-style:bold;
+	font-size:25px;
+  }
+
+  li {
+    list-style-type: circle;
+  }
+}
+
+.languages {
+display:flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
+
+  .list2 {
+    width: 50%;
+    margin: 1%;
+    margin-left: 14%;
+	font-family: @listFont;
+	font-size:15px;
+
+    .cl {
+      h1 {
+        font-size: 50px;
+        text-decoration: underline;
+        font-style: bold;
+        margin: 1%;
+        font-family: @titleFont;
+      }
+
+      li {
+        list-style-type: circle;
+      }
+    }
+  }
+}
+
+.other {
+  display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
+
+  .list3 {
+    width: 50%;
+    margin: 1%;
+	margin-left: 14%;
+	font-family:@listFont;
+	font-size:15px;
+
+    .lo {
+      h1 {
+        font-size: 50px;
+        text-decoration: underline;
+        font-style: bold;
 		margin: 1%;
-		
-	}
-}	
-
-.mo{
-		h2{
-				font-size: 25px;
-				font-style:italic;
-				text-decoration:underline;
-				
-		}
-
-		li{
-			list-style-type:circle;
-			
-
-		}
-	}	
-}
-.acs{
-	h2{
-		font-size: 25px;
-		font-style:italic;
-		text-decoration:underline;
-		
-	}
-
-	li{
-	list-style-type:circle;
-	
-	}
-}
-	
-.languages{
-	display:flex;
-	border: 5px groove black;
-	margin:1%;
-	background:@background;
-	color:@main;
-
-.list2{
-	width:50%;
-	margin:1%;
-	margin-left:14%;
-	
-.cl{
-    h1{
-		font-size:35px;
-		text-decoration:underline;
-		font-style:bold;
+		font-family:@titleFont;
 		margin:1%;
-	}
-	
-		li{
-			list-style-type:circle;
-		}
-	}	
-}
-}
+      }
 
-
-.other{
-	display:flex;
-	border: 5px groove black;
-	margin:1%;
-	background:@background;
-	color:@main;
-
-.list3{
-	width:50%;
-	margin:1%;
-	margin-left:14%;
-	
-.lo{
-    h1{
-		font-size:35px;
-		text-decoration:underline;
-		font-style:bold;
-		margin: 1%;
-	}
-	
-		li{
-			list-style-type:circle;
-		}
-	}
-}
+      li {
+        list-style-type: circle;
+      }
+    }
+  }
 }

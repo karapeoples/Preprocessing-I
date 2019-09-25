@@ -136,11 +136,11 @@ body {
 }
 .border {
   text-align: center;
-  max-width: 75%;
-  border: 5px double black;
-  margin-left: 12%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  max-width: 98%;
+  border: 5px double red;
+  margin: 1%;
+  background: black;
+  color: #fff;
 }
 header {
   display: flex;
@@ -153,16 +153,28 @@ header nav {
   text-decoration: none;
   justify-content: center;
   justify-content: space-evenly;
-  flex-grow: 1;
   width: 100%;
 }
-header nav a {
-  background: #35caf0;
+header button {
+  border: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+  border-radius: 25px;
+  width: 20%;
+  background-color: red;
+}
+header button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
   color: #fff;
 }
-header nav a:hover {
+header button a:hover {
   background: #fff;
-  color: #35caf0;
+  color: red;
   border-radius: 25px;
 }
 .image img {
@@ -170,6 +182,7 @@ header nav a:hover {
   height: 250px;
   width: 50%;
   margin-left: 25%;
+  margin-top: 5%;
 }
 .top {
   margin: 2%;
@@ -181,6 +194,7 @@ header nav a:hover {
   text-decoration: none;
   font-size: 45px;
   text-align: center;
+  font-family: "Amatic SC", cursive;
 }
 h2 {
   display: flex;
@@ -189,6 +203,7 @@ h2 {
   text-decoration: none;
   font-size: 35px;
   margin-top: 5%;
+  font-family: "Amatic SC", cursive;
 }
 p {
   display: flex;
@@ -197,6 +212,7 @@ p {
   text-decoration: none;
   font-size: 25px;
   margin: 5%;
+  font-family: "Indie Flower", cursive;
 }
 .about {
   margin: 10%;
@@ -207,6 +223,7 @@ p {
   font-size: 35px;
   justify-content: center;
   text-align: center;
+  font-family: "Amatic SC", cursive;
 }
 .about p {
   display: flex;
@@ -214,6 +231,7 @@ p {
   font-size: 25px;
   justify-content: center;
   text-align: center;
+  font-family: "Indie Flower", cursive;
 }
 #skills {
   display: flex;
@@ -226,18 +244,19 @@ p {
   margin: 2px;
   border-radius: 25px;
   width: 33%;
-  background-color: #35caf0;
+  background-color: red;
 }
 #skills button a {
   display: block;
   width: 100%;
   height: 100%;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
+  font-family: "Amatic SC", cursive;
   color: #fff;
 }
 #skills button a:hover {
   background: #fff;
-  color: #35caf0;
+  color: red;
   border-radius: 25px;
 }
