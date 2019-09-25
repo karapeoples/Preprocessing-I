@@ -141,6 +141,11 @@ body {
   height: 75%;
   padding: 5%;
 }
+@media all and (max-width: 500px) {
+  .border {
+    height: 100%;
+  }
+}
 header {
   display: flex;
   margin: 1%;
@@ -159,7 +164,6 @@ header button {
   text-align: center;
   height: 50px;
   border-radius: 25px;
-  width: 20%;
   background-color: red;
 }
 header button a {
@@ -184,6 +188,11 @@ header button a:hover {
   height: 250px;
   width: 50%;
   margin-left: 25%;
+}
+@media all and (max-width: 500px) {
+  .image img {
+    margin-top: 7%;
+  }
 }
 .current {
   margin: 5%;

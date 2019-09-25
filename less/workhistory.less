@@ -87,6 +87,9 @@ body {
 	color: @main;
 	height: 75%;
 	padding:5%;
+	@media all and (max-width:500px){
+		height:100%;
+	}
   }
   
   header {
@@ -106,7 +109,6 @@ body {
 	  text-align: center;
 	  height: 50px;
 	  border-radius: 25px;
-	  width: 20%;
 	  background-color: @background;
   
 	  a {
@@ -128,7 +130,10 @@ body {
 		display: flex;
 		height: 250px;
 		width: 50%;
-        margin-left: 25%;
+		margin-left: 25%;
+		@media all and (max-width: 500px){
+			margin-top:7%;
+		}
     }
 }
 

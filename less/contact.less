@@ -160,6 +160,9 @@ body {
   color: @main;
   height: 75%;
   padding:5%;
+  @media all and (max-width:500px){
+    height:100%;
+  }
 }
 
 header {
@@ -179,7 +182,6 @@ header {
     text-align: center;
     height: 50px;
     border-radius: 25px;
-    width: 20%;
     background-color: @background;
 
     a {
@@ -202,6 +204,9 @@ header {
     width: 50%;
     margin-left: 25%;
     margin-top:5%;
+    @media all and (max-width:500px){
+      margin-top:7%;
+    }
   }
 }
 
@@ -224,32 +229,45 @@ h1 {
   text-align: center;
   margin: 5px;
   font-family: @cuteFont;
+  @media all and (max-width:500px){
+    font-size: 20px;
+  }
   &:hover {
     font-size: 50px;
     color: @background;
+    @media all and (max-width:500px){
+      font-size: 30px;
+    }
   }
 }
 
 .email {
   font-size: 30px;
   text-align: center;
+  text-decoration:underline;
   font-family: @cuteFont;
-
-  a {
+  @media all and (max-width:500px){
+    font-size: 20px;
+  }
     &:hover {
       font-size: 50px;
       color: @background;
+      @media all and (max-width:500px){
+        font-size: 35px;
+      }
     }
   }
-}
+
 
 .numbers {
   font-size: 30px;
   text-align: center;
   font-family: @cuteFont;
+ @media all and (max-width:500px){
+   font-size: 15px;
+ }
 
   .phone {
-    font-size:30px;
     border-radius: 5px;
     background: @background;
     color: @main;
@@ -259,11 +277,12 @@ h1 {
       margin: 5px; 
       background: @main;
       color: @background;
+      @media all and (max-width:500px){
+        font-size: 25px;
+      }
     }
   }
   .cell {
-    
-    font-size:30px;
     border-radius: 5px;
     background: @background;
     color: @main;
@@ -273,6 +292,9 @@ h1 {
       font-size: 35px;
       background: @main;
       color: @background;
+      @media all and (max-width:500px){
+        font-size: 25px;
+      }
     }
   }
 }

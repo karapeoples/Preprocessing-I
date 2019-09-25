@@ -140,6 +140,11 @@ body {
   height: 75%;
   padding: 5%;
 }
+@media all and (max-width: 500px) {
+  .border {
+    height: 100%;
+  }
+}
 header {
   display: flex;
   margin: 1%;
@@ -158,7 +163,6 @@ header button {
   text-align: center;
   height: 50px;
   border-radius: 25px;
-  width: 20%;
   background-color: red;
 }
 header button a {
@@ -184,6 +188,11 @@ header button a:hover {
   margin-left: 25%;
   margin-top: 5%;
 }
+@media all and (max-width: 500px) {
+  .image img {
+    margin-top: 7%;
+  }
+}
 h1 {
   font-size: 50px;
   font-style: bold;
@@ -203,26 +212,51 @@ h1:hover {
   margin: 5px;
   font-family: "Indie Flower", cursive;
 }
+@media all and (max-width: 500px) {
+  .address {
+    font-size: 20px;
+  }
+}
 .address:hover {
   font-size: 50px;
   color: red;
 }
+@media all and (max-width: 500px) {
+  .address:hover {
+    font-size: 30px;
+  }
+}
 .email {
   font-size: 30px;
   text-align: center;
+  text-decoration: underline;
   font-family: "Indie Flower", cursive;
 }
-.email a:hover {
+@media all and (max-width: 500px) {
+  .email {
+    font-size: 20px;
+  }
+}
+.email:hover {
   font-size: 50px;
   color: red;
+}
+@media all and (max-width: 500px) {
+  .email:hover {
+    font-size: 35px;
+  }
 }
 .numbers {
   font-size: 30px;
   text-align: center;
   font-family: "Indie Flower", cursive;
 }
+@media all and (max-width: 500px) {
+  .numbers {
+    font-size: 15px;
+  }
+}
 .numbers .phone {
-  font-size: 30px;
   border-radius: 5px;
   background: red;
   color: #fff;
@@ -234,8 +268,12 @@ h1:hover {
   background: #fff;
   color: red;
 }
+@media all and (max-width: 500px) {
+  .numbers .phone:hover {
+    font-size: 25px;
+  }
+}
 .numbers .cell {
-  font-size: 30px;
   border-radius: 5px;
   background: red;
   color: #fff;
@@ -246,4 +284,9 @@ h1:hover {
   font-size: 35px;
   background: #fff;
   color: red;
+}
+@media all and (max-width: 500px) {
+  .numbers .cell:hover {
+    font-size: 25px;
+  }
 }
