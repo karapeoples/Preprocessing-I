@@ -126,10 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   height: 100%;
@@ -141,6 +137,13 @@ body {
   margin: 1%;
   background: black;
   color: #fff;
+  height: 75%;
+  padding: 5%;
+}
+@media all and (max-width: 500px) {
+  .border {
+    height: 100%;
+  }
 }
 header {
   display: flex;
@@ -172,13 +175,15 @@ header button a {
   color: #fff;
 }
 header button a:hover {
+  width: 100%;
+  height: 100%;
   background: #fff;
   color: red;
   border-radius: 25px;
 }
 .image img {
   display: flex;
-  height: 250px;
+  height: 200px;
   width: 50%;
   margin-left: 25%;
   margin-top: 5%;
@@ -188,79 +193,100 @@ header button a:hover {
     margin-top: 7%;
   }
 }
-.top {
-  margin: 2%;
-}
-.top h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 45px;
+h1 {
+  font-size: 50px;
+  font-style: bold;
   text-align: center;
+  margin: 5px;
   font-family: "Amatic SC", cursive;
 }
-h2 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 35px;
-  margin-top: 5%;
-  font-family: "Amatic SC", cursive;
+h1:hover {
+  font-size: 75px;
+  color: red;
 }
-p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  font-size: 25px;
-  margin: 5%;
+.address {
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  margin: 5px;
   font-family: "Indie Flower", cursive;
 }
-.about {
-  margin: 10%;
+@media all and (max-width: 500px) {
+  .address {
+    font-size: 20px;
+  }
 }
-.about h2 {
-  display: flex;
-  text-decoration: none;
-  font-size: 35px;
-  justify-content: center;
+.address:hover {
+  font-size: 50px;
+  color: red;
+}
+@media all and (max-width: 500px) {
+  .address:hover {
+    font-size: 30px;
+  }
+}
+.email {
+  font-size: 30px;
   text-align: center;
-  font-family: "Amatic SC", cursive;
+  text-decoration: underline;
+  font-family: "Indie Flower", cursive;
 }
-.about p {
-  display: flex;
-  text-decoration: none;
-  font-size: 25px;
-  justify-content: center;
+@media all and (max-width: 500px) {
+  .email {
+    font-size: 20px;
+  }
+}
+.email:hover {
+  font-size: 50px;
+  color: red;
+}
+@media all and (max-width: 500px) {
+  .email:hover {
+    font-size: 35px;
+  }
+}
+.numbers {
+  font-size: 30px;
   text-align: center;
   font-family: "Indie Flower", cursive;
 }
-#skills {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
+@media all and (max-width: 500px) {
+  .numbers {
+    font-size: 15px;
+  }
 }
-#skills button {
-  border: 1px solid black;
-  padding: 2px;
-  margin: 2px;
-  border-radius: 25px;
-  width: 33%;
-  background-color: red;
-}
-#skills button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 35px;
-  font-family: "Amatic SC", cursive;
+.numbers .phone {
+  border-radius: 5px;
+  background: red;
   color: #fff;
 }
-#skills button a:hover {
+.numbers .phone:hover {
+  width: 50%;
+  font-size: 35px;
+  margin: 5px;
   background: #fff;
   color: red;
-  border-radius: 25px;
+}
+@media all and (max-width: 500px) {
+  .numbers .phone:hover {
+    font-size: 25px;
+  }
+}
+.numbers .cell {
+  border-radius: 5px;
+  background: red;
+  color: #fff;
+}
+.numbers .cell:hover {
+  width: 50%;
+  margin: 5px;
+  font-size: 35px;
+  background: #fff;
+  color: red;
+}
+@media all and (max-width: 500px) {
+  .numbers .cell:hover {
+    font-size: 25px;
+  }
 }

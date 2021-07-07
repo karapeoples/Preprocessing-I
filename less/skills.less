@@ -129,24 +129,18 @@ table {
   border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
   height: 100%;
 }
-
-//*My Code Starts Here.....
 
 // ?Variables
 @background: red;
 @main: #fff;
 @titleFont: "Amatic SC", cursive;
 @cuteFont: "Indie Flower", cursive;
+@listFont: "Courgette", cursive;
+
 // ?Mix-Ins
 .hover(@background, @main) {
   &:hover {
@@ -155,14 +149,6 @@ body {
     border-radius: 25px;
   }
 }
-
-.display(@justify,@align) {
-  display: flex;
-  justify-content: @justify;
-  align-content: @align;
-}
-
-//*Coding......
 
 .border {
   text-align: center;
@@ -204,94 +190,124 @@ header {
     }
   }
 }
+.img {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  margin: 1%;
+}
+.programs {
+  display: flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
+  margin-top: 5%;
 
-.image {
-  img {
-    display: flex;
-    height: 250px;
+  .list1 {
     width: 50%;
-    margin-left: 25%;
-    margin-top: 5%;
-    @media all and (max-width: 500px) {
-      margin-top: 7%;
+    margin: 1%;
+    margin-left: 14%;
+	font-family: @listFont;
+	font-size:15px;
+
+    h1 {
+      font-size: 50px;
+      text-decoration: underline;
+      font-style: bold;
+      margin: 1%;
+      font-family: @titleFont;
+    }
+  
+
+  .mo {
+    h2 {
+      font-size: 25px;
+      font-style: italic;
+      text-decoration: underline;
+	  font-family: @cuteFont;
+	  margin:1%;
+    }
+
+    li {
+	  list-style-type: circle;
+	  
+    }
+  }
+}
+}
+.acs {
+  h2 {
+    font-style: italic;
+    text-decoration: underline;
+	font-family: @cuteFont;
+	margin:1%;
+	font-size:25px;
+  }
+
+  li {
+    list-style-type: circle;
+  }
+}
+
+.languages {
+display:flex;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
+
+  .list2 {
+    width: 50%;
+    margin: 1%;
+    margin-left: 14%;
+	font-family: @listFont;
+	font-size:15px;
+
+    .cl {
+      h1 {
+        font-size: 50px;
+        text-decoration: underline;
+        font-style: bold;
+        margin: 1%;
+        font-family: @titleFont;
+      }
+
+      li {
+        list-style-type: circle;
+      }
     }
   }
 }
 
-.top {
-  margin: 2%;
-
-  h1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-decoration: none;
-    font-size: 45px;
-    text-align: center;
-    font-family: @titleFont;
-  }
-}
-
-h2 {
-  .display(center, center);
-  text-decoration: none;
-  font-size: 35px;
-  margin-top: 5%;
-  font-family: @titleFont;
-}
-
-p {
-  .display(center, center);
-  text-decoration: none;
-  font-size: 25px;
-  margin: 5%;
-  font-family: @cuteFont;
-}
-
-.about {
-  margin: 10%;
-
-  h2 {
-    display: flex;
-    text-decoration: none;
-    font-size: 35px;
-    justify-content: center;
-    text-align: center;
-    font-family: @titleFont;
-  }
-
-  p {
-    display: flex;
-    text-decoration: none;
-    font-size: 25px;
-    justify-content: center;
-    text-align: center;
-    font-family: @cuteFont;
-  }
-}
-
-#skills {
+.other {
   display: flex;
-  justify-content: center;
-  margin: 5%;
+  border: 5px groove black;
+  margin: 1%;
+  background: @background;
+  color: @main;
 
-  button {
-    border: 1px solid black;
-    padding: 2px;
-    margin: 2px;
-    border-radius: 25px;
-    width: 33%;
-	background-color: @background;
-	
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      font-size: 35px;
-      font-family: @titleFont;
-      color: @main;
-      .hover(@main, @background);
+  .list3 {
+    width: 50%;
+    margin: 1%;
+	margin-left: 14%;
+	font-family:@listFont;
+	font-size:15px;
+
+    .lo {
+      h1 {
+        font-size: 50px;
+        text-decoration: underline;
+        font-style: bold;
+		margin: 1%;
+		font-family:@titleFont;
+		margin:1%;
+      }
+
+      li {
+        list-style-type: circle;
+      }
     }
   }
 }
